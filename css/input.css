@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+--root {
+    --primary: '#33964a';
+}
+
+* {
+    /* outline: 1px dashed red; */
+    @apply font-poppins;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    @apply font-extrabold;
+    @apply text-xl;
+}
+
+input:focus {
+    outline: 1px solid var(--primary);
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.show-Login {
+    font-size: 12px;
+    text-align: right;
+}
+
+.err {
+    @apply p-2;
+    @apply bg-red-200;
+    @apply border-red-500;
+}
